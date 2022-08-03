@@ -1,0 +1,42 @@
+{
+    "name": "hardhat-fund-me",
+    "auther": "Udara Senevirathna",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@chainlink/contracts": "^0.4.1",
+        "@ethersproject/abi": "^5.6.4",
+        "@ethersproject/providers": "^5.6.8",
+        "@nomicfoundation/hardhat-chai-matchers": "^1.0.2",
+        "@nomicfoundation/hardhat-network-helpers": "^1.0.3",
+        "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+        "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
+        "@nomiclabs/hardhat-etherscan": "^3.1.0",
+        "@typechain/ethers-v5": "^10.1.0",
+        "@typechain/hardhat": "^6.1.2",
+        "ansi-styles": "5.0.0",
+        "chai": "^4.3.6",
+        "chalk": "4.0.0",
+        "dotenv": "^16.0.1",
+        "ethers": "^5.6.9",
+        "fs-extra": "^10.1.0",
+        "hardhat": "^2.10.1",
+        "hardhat-deploy": "^0.11.11",
+        "hardhat-gas-reporter": "^1.0.8",
+        "has-flag": "3.0.0",
+        "prettierrc": "^0.0.0-5",
+        "solhint": "^3.3.7",
+        "solidity-coverage": "^0.7.21",
+        "support-color": "^0.0.1-beta.1",
+        "supports-color": "7.2.0",
+        "type-detect": "4.0.8",
+        "typechain": "^8.1.0"
+    },
+    "scripts": {
+        "test": "yarn hardhat test",
+        "test:staging": "yarn hardhat test --network rinkeby",
+        "lint": "yarn solhint 'contracts/*.sol'",
+        "lint:fix": "yarn solhint 'contracts/*.sol' --fix",
+        "format": "yarn prettier --write .",
+        "coverage": "yarn hardhat coverage"
+    }
+}
